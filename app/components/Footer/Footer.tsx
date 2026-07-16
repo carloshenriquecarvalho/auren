@@ -49,7 +49,7 @@ export default function Footer() {
               contato@auren.com.br
             </a>
             <a href="tel:+556100000000" className={styles.contactLink} id="footer-phone">
-              +55 (61) 0000‑0000
+              +55 (61) 0000-0000
             </a>
           </div>
         </div>
