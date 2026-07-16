@@ -1,66 +1,52 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import Navbar from "@/app/components/Navbar/Navbar";
+import Footer from "@/app/components/Footer/Footer";
+import SectionHero from "@/app/components/sections/SectionHero/SectionHero";
+import SectionConfianca from "@/app/components/sections/SectionConfianca/SectionConfianca";
+import SectionSobre from "@/app/components/sections/SectionSobre/SectionSobre";
+import SectionEssencia from "@/app/components/sections/SectionEssencia/SectionEssencia";
+import SectionValores from "@/app/components/sections/SectionValores/SectionValores";
+import SectionMercado from "@/app/components/sections/SectionMercado/SectionMercado";
+import SectionSolucoes from "@/app/components/sections/SectionSolucoes/SectionSolucoes";
+import SectionIdentidade from "@/app/components/sections/SectionIdentidade/SectionIdentidade";
+import SectionExperiencia from "@/app/components/sections/SectionExperiencia/SectionExperiencia";
+import SectionContato from "@/app/components/sections/SectionContato/SectionContato";
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className={styles.intro}>
-          <h1>To get started, edit the page.tsx file.</h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
+    <>
+      <Navbar />
+      <main id="main-content">
+        {/* Task 2.1 — Hero com novo posicionamento */}
+        <SectionHero />
+
+        {/* Task 2.2 — Credibilidade / prova sem dados inventados */}
+        <SectionConfianca />
+
+        {/* Task 2.6 — Quem Somos: personalidade e cultura humanizada */}
+        <SectionSobre />
+
+        {/* Task 2.3 — Essência / Propósito / Missão / Visão */}
+        <SectionEssencia />
+
+        {/* Task 2.4 — 5 Valores: Fé, Integridade, Excelência, Relacionamentos, Responsabilidade */}
+        <SectionValores />
+
+        {/* Task 2.5 — Como enxergamos o mercado: ecossistema de confiança */}
+        <SectionMercado />
+
+        {/* Soluções — Hakon, Hegon, CO2 */}
+        <SectionSolucoes />
+
+        {/* Task 2.7 — Nossa Identidade: significado da marca */}
+        <SectionIdentidade />
+
+        {/* Task 2.8 — A Experiência AUREN: timeline da jornada */}
+        <SectionExperiencia />
+
+        {/* Task 2.9 — Contato: formulário consultivo */}
+        <SectionContato />
       </main>
-    </div>
+      <Footer />
+    </>
   );
 }

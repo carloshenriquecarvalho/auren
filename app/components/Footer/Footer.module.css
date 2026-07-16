@@ -1,0 +1,113 @@
+.footer {
+  background: var(--black-deep);
+  border-top: 1px solid var(--gold-border);
+  padding-block: var(--space-12) var(--space-8);
+}
+
+.container {
+  max-width: var(--max-width);
+  margin-inline: auto;
+  padding-inline: var(--section-padding-x);
+}
+
+.top {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: var(--space-12);
+  align-items: start;
+}
+
+/* Brand */
+.brand { max-width: 320px; }
+
+.logoImg {
+  width: auto;
+  height: clamp(60px, 8vw, 80px);
+  object-fit: contain;
+  margin-bottom: var(--space-4);
+}
+
+.tagline {
+  font-size: var(--text-body-sm);
+  color: var(--graphite-400);
+  line-height: 1.7;
+}
+
+/* Nav */
+.nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.navLink {
+  font-family: var(--font-sans);
+  font-size: var(--text-body-sm);
+  color: var(--graphite-400);
+  transition: color var(--duration-fast) var(--ease-out);
+}
+
+.navLink:hover { color: var(--gold-light); }
+
+/* Contact */
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.contactLabel {
+  font-family: var(--font-sans);
+  font-size: var(--text-label);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold-signature);
+  margin-bottom: var(--space-1);
+}
+
+.contactLink {
+  font-family: var(--font-sans);
+  font-size: var(--text-body-sm);
+  color: var(--graphite-400);
+  transition: color var(--duration-fast) var(--ease-out);
+}
+
+.contactLink:hover { color: var(--white-pure); }
+
+/* Divider */
+.divider {
+  width: 100%;
+  height: 1px;
+  background: rgba(255,255,255,0.07);
+  margin-block: var(--space-8);
+}
+
+/* Bottom */
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+
+.copy, .legal {
+  font-family: var(--font-sans);
+  font-size: var(--text-label);
+  color: var(--graphite-600);
+  letter-spacing: 0.02em;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .top {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+
+  .bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-1);
+  }
+}

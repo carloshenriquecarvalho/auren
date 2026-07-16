@@ -1,0 +1,104 @@
+.section {
+  background: var(--white-pure);
+  padding-block: var(--section-padding-y);
+}
+
+.container {
+  max-width: var(--max-width);
+  margin-inline: auto;
+  padding-inline: var(--section-padding-x);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--space-4);
+  margin-bottom: var(--space-12);
+}
+
+.labelRow {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.divider {
+  display: block;
+  width: 28px;
+  height: 1px;
+  background: var(--gold-signature);
+  flex-shrink: 0;
+}
+
+.title {
+  font-family: var(--font-serif);
+  font-size: var(--text-display-lg);
+  font-weight: 400;
+  color: var(--black-deep);
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  max-width: 540px;
+}
+
+.sub {
+  font-family: var(--font-sans);
+  font-size: var(--text-body-lg);
+  color: var(--graphite-600);
+  line-height: 1.7;
+  max-width: 540px;
+}
+
+/* 4-card grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-4);
+}
+
+.card {
+  background: var(--off-white);
+  border: 1px solid var(--graphite-100);
+  border-radius: var(--radius-md);
+  padding: clamp(28px, 3.5vw, 44px);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  transition: border-color var(--duration-normal) var(--ease-out),
+              background var(--duration-normal) var(--ease-out);
+}
+
+.card:hover {
+  border-color: var(--gold-border);
+  background: var(--white-pure);
+}
+
+.iconWrap {
+  width: 40px;
+  height: 40px;
+  color: var(--gold-signature);
+  flex-shrink: 0;
+}
+
+.iconWrap svg { width: 100%; height: 100%; }
+
+.cardTitle {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: var(--black-deep);
+  letter-spacing: -0.01em;
+}
+
+.cardBody {
+  font-family: var(--font-sans);
+  font-size: var(--text-body-md);
+  color: var(--graphite-700);
+  line-height: 1.75;
+}
+
+@media (max-width: 768px) {
+  .grid { grid-template-columns: 1fr; }
+  .header { align-items: flex-start; text-align: left; }
+}

@@ -1,0 +1,205 @@
+/* ─── Valores Accordion — mobile-first fix ─────────────────────── */
+
+.section {
+  background: var(--white-pure);
+  padding-block: var(--section-padding-y);
+}
+
+.container {
+  max-width: var(--max-width);
+  margin-inline: auto;
+  padding-inline: var(--section-padding-x);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  margin-bottom: var(--space-12);
+}
+
+.labelRow {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.divider {
+  display: block;
+  width: 28px;
+  height: 1px;
+  background: var(--gold-signature);
+  flex-shrink: 0;
+}
+
+.title {
+  font-family: var(--font-serif);
+  font-size: var(--text-display-lg);
+  font-weight: 400;
+  color: var(--black-deep);
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  max-width: 560px;
+}
+
+.sub {
+  font-family: var(--font-sans);
+  font-size: var(--text-body-lg);
+  color: var(--graphite-600);
+  line-height: 1.7;
+  max-width: 520px;
+}
+
+/* Accordion list */
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  background: var(--graphite-100);
+  border: 1px solid var(--graphite-100);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.card {
+  background: var(--white-pure);
+  transition: background var(--duration-fast) var(--ease-out);
+}
+
+.cardOpen { background: var(--off-white); }
+
+/* Desktop toggle: num | titles | short | icon */
+.cardToggle {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  padding: clamp(18px, 2.2vw, 28px) clamp(20px, 3vw, 40px);
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  transition: background var(--duration-fast) var(--ease-out);
+}
+
+.cardToggle:hover { background: rgba(0,0,0,0.02); }
+
+.cardNum {
+  font-family: var(--font-sans);
+  font-size: var(--text-label);
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  color: var(--gold-signature);
+  width: 32px;
+  flex-shrink: 0;
+}
+
+.cardTitles {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  width: 180px;
+  flex-shrink: 0;
+}
+
+.cardTag {
+  font-family: var(--font-sans);
+  font-size: var(--text-label);
+  color: var(--graphite-400);
+  letter-spacing: 0.08em;
+}
+
+.cardTitle {
+  font-family: var(--font-serif);
+  font-size: 1.175rem;
+  font-weight: 400;
+  color: var(--black-deep);
+  letter-spacing: -0.01em;
+}
+
+.cardShort {
+  flex: 1;
+  font-family: var(--font-sans);
+  font-size: var(--text-body-sm);
+  color: var(--graphite-600);
+  line-height: 1.5;
+}
+
+.cardIcon {
+  font-family: var(--font-sans);
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: var(--gold-signature);
+  width: 24px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+/* Expanded body */
+.cardBody {
+  overflow: hidden;
+  border-top: 1px solid var(--graphite-100);
+}
+
+.cardFull {
+  font-family: var(--font-sans);
+  font-size: var(--text-body-md);
+  color: var(--graphite-700);
+  line-height: 1.8;
+  padding: var(--space-5) clamp(20px, 3vw, 40px);
+  max-width: 720px;
+}
+
+/* ── Tablet ─────────────────────────────────────── */
+@media (max-width: 860px) {
+  .cardTitles { width: 140px; }
+  .cardShort { display: none; }
+}
+
+/* ── Mobile ────────────────────────────────────── */
+@media (max-width: 600px) {
+  .cardToggle {
+    gap: var(--space-3);
+    padding: 18px 20px;
+  }
+  /* Hide separate cardTitles col; show info via cardMain below */
+  .cardTitles { display: none; }
+  .cardShort  { display: none; }
+
+  /* Inject main content via ::after on cardNum parent — instead,
+     use cardMain which is always rendered */
+  .cardMain {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    flex: 1;
+  }
+}
+
+/* cardMain — always rendered, shown on mobile, visually hidden on desktop */
+.cardMain {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .cardMain {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    flex: 1;
+  }
+
+  .cardMainTag {
+    font-family: var(--font-sans);
+    font-size: var(--text-label);
+    color: var(--graphite-400);
+    letter-spacing: 0.08em;
+  }
+
+  .cardMainTitle {
+    font-family: var(--font-serif);
+    font-size: 1.05rem;
+    font-weight: 400;
+    color: var(--black-deep);
+  }
+}
