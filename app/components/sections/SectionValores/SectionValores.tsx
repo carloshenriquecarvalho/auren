@@ -2,7 +2,7 @@
 "use client";
 
 import { useRef, useState } from "react";
-import { motion, useInView, AnimatePresence } from "framer-motion";
+import { motion, useInView, AnimatePresence, Variants } from "framer-motion";
 import styles from "./SectionValores.module.css";
 
 const valores = [
@@ -54,7 +54,7 @@ const containerV = {
 };
 const cardV = {
   hidden: { opacity: 0, y: 32 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.7, ease: [0.16, 1, 0.3, 1] } },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.7, ease: [0.16, 1, 0.3, 1] as const } },
 };
 
 export default function SectionValores() {
@@ -135,7 +135,7 @@ export default function SectionValores() {
                       initial={{ height: 0, opacity: 0 }}
                       animate={{ height: "auto", opacity: 1 }}
                       exit={{ height: 0, opacity: 0 }}
-                      transition={{ duration: 0.38, ease: [0.16, 1, 0.3, 1] }}
+                      transition={{ duration: 0.38, ease: [0.16, 1, 0.3, 1] as const }}
                       role="region"
                       aria-label={`Texto completo de ${v.title}`}
                     >

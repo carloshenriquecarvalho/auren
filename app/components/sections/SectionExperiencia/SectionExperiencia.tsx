@@ -2,7 +2,7 @@
 "use client";
 
 import { useRef } from "react";
-import { motion, useInView } from "framer-motion";
+import { motion, useInView, Variants } from "framer-motion";
 import styles from "./SectionExperiencia.module.css";
 
 const etapas = [
@@ -82,7 +82,7 @@ export default function SectionExperiencia() {
               animate={inView ? { opacity: 1, x: 0 } : {}}
               transition={{
                 duration: 0.75,
-                ease: [0.16, 1, 0.3, 1],
+                ease: [0.16, 1, 0.3, 1] as const,
                 delay: 0.1 + i * 0.12,
               }}
             >

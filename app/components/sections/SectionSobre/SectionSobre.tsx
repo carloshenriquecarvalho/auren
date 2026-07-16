@@ -2,7 +2,7 @@
 "use client";
 
 import { useRef } from "react";
-import { motion, useInView } from "framer-motion";
+import { motion, useInView, Variants } from "framer-motion";
 import styles from "./SectionSobre.module.css";
 
 const atributos = [
@@ -32,7 +32,7 @@ const fadeUp = (i: number) => ({
   hidden: { opacity: 0, y: 28 },
   visible: {
     opacity: 1, y: 0,
-    transition: { duration: 0.75, ease: [0.16, 1, 0.3, 1], delay: i * 0.1 },
+    transition: { duration: 0.75, ease: [0.16, 1, 0.3, 1] as const, delay: i * 0.1 },
   },
 });
 

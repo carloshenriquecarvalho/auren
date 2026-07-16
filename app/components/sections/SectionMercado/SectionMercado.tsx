@@ -2,7 +2,7 @@
 "use client";
 
 import { useRef } from "react";
-import { motion, useInView } from "framer-motion";
+import { motion, useInView, Variants } from "framer-motion";
 import styles from "./SectionMercado.module.css";
 
 const contrastes = [
@@ -32,7 +32,7 @@ export default function SectionMercado() {
             className={styles.left}
             initial={{ opacity: 0, x: -24 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] as const }}
           >
             <div className={styles.labelRow}>
               <span className={styles.divider} aria-hidden="true" />
@@ -68,7 +68,7 @@ export default function SectionMercado() {
             className={styles.right}
             initial={{ opacity: 0, x: 24 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
-            transition={{ delay: 0.15, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+            transition={{ delay: 0.15, duration: 0.8, ease: [0.16, 1, 0.3, 1] as const }}
             aria-label="Contraste de abordagens"
           >
             {contrastes.map((c) => (

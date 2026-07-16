@@ -2,7 +2,7 @@
 "use client";
 
 import { useRef, useState } from "react";
-import { motion, AnimatePresence, useInView } from "framer-motion";
+import { motion, AnimatePresence, useInView, Variants } from "framer-motion";
 import styles from "./SectionEssencia.module.css";
 
 const blocos = [
@@ -100,7 +100,7 @@ export default function SectionEssencia() {
                 initial={{ opacity: 0, y: 18 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -12 }}
-                transition={{ duration: 0.45, ease: [0.16, 1, 0.3, 1] }}
+                transition={{ duration: 0.45, ease: [0.16, 1, 0.3, 1] as const }}
               >
                 <p className={styles.panelNum} aria-hidden="true">{current.num}</p>
                 <h3 className={styles.panelHeadline}>{current.headline}</h3>

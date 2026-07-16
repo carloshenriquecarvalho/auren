@@ -2,7 +2,7 @@
 "use client";
 
 import { useRef } from "react";
-import { motion, useInView } from "framer-motion";
+import { motion, useInView, Variants } from "framer-motion";
 import styles from "./SectionConfianca.module.css";
 
 const pilares = [
@@ -50,13 +50,13 @@ const pilares = [
   },
 ];
 
-const containerV = {
+const containerV: Variants = {
   hidden: {},
   visible: { transition: { staggerChildren: 0.1, delayChildren: 0.1 } },
 };
-const cardV = {
+const cardV: Variants = {
   hidden: { opacity: 0, y: 36 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.75, ease: [0.16, 1, 0.3, 1] } },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.75, ease: [0.16, 1, 0.3, 1] as const } },
 };
 
 export default function SectionConfianca() {

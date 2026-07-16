@@ -2,7 +2,7 @@
 "use client";
 
 import { useRef } from "react";
-import { motion, useInView } from "framer-motion";
+import { motion, useInView, Variants } from "framer-motion";
 import Image from "next/image";
 import styles from "./SectionIdentidade.module.css";
 
@@ -37,7 +37,7 @@ export default function SectionIdentidade() {
             className={styles.symbolSide}
             initial={{ opacity: 0, scale: 0.94 }}
             animate={inView ? { opacity: 1, scale: 1 } : {}}
-            transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
+            transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] as const }}
             aria-hidden="true"
           >
             <div className={styles.symbolFrame}>
