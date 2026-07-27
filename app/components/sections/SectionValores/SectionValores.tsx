@@ -28,7 +28,7 @@ const valores = [
     title: "Excelência",
     tag: "Excelência",
     short: "Padrão técnico elevado, sem concessões, do equipamento ao atendimento.",
-    full: "Excelência não é perfeição — é a recusa em naturalizar o suficiente. É o detalhe no protocolo de pós-venda, a clareza do treinamento técnico, a velocidade de resposta diante de uma dúvida clínica. É a marca que a equipe AUREN deixa em cada interação.",
+    full: "Excelência não é perfeição — é a recusa em naturalizar o suficiente. É o detalhe no protocolo de pós-venda, a clareza do treinamento técnico, a agilidade de resposta diante de cada demanda da clínica. É a marca que a equipe AUREN deixa em cada interação.",
   },
   {
     id: "relacionamentos",
@@ -44,7 +44,7 @@ const valores = [
     title: "Responsabilidade",
     tag: "Responsabilidade",
     short: "Assumimos, integralmente, as consequências de cada decisão.",
-    full: "Cada equipamento que entregamos entra em contato direto com a prática clínica de um profissional e, por extensão, com a vida de pacientes. Essa consciência não nos paralisa — nos responsabiliza. E é exatamente esse nível de comprometimento que diferencia a AUREN.",
+    full: "Cada equipamento do nosso portfólio é selecionado e comercializado com a consciência de que ele impacta diretamente o resultado da clínica e a experiência dos seus clientes. Essa consciência não nos paralisa — nos responsabiliza. E é exatamente esse nível de comprometimento que diferencia a AUREN.",
   },
 ];
 

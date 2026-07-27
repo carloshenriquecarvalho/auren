@@ -9,12 +9,12 @@ const contrastes = [
   {
     id: "preco",
     lado: "O mercado comum",
-    desc: "Compete por preço. Reduz especificações para caber em tabelas. Trata equipamento médico como commodity e o pós-venda como custo.",
+    desc: "Compete por preço. Reduz especificações para caber em tabelas. Trata equipamentos para estética como commodity e o pós-venda como custo.",
   },
   {
     id: "confianca",
     lado: "A perspectiva AUREN",
-    desc: "Compete por confiança. Eleva o critério de decisão para valor clínico, suporte técnico e duração do relacionamento. Trata o pós-venda como a parte mais importante do contrato.",
+    desc: "Compete por confiança. Eleva o critério de decisão para retorno real à clínica, suporte técnico e profundidade do relacionamento. Trata o pós-venda como a parte mais importante do contrato.",
     highlight: true,
   },
 ];
@@ -54,13 +54,7 @@ export default function SectionMercado() {
               gestor de clínica não precisa se perguntar se terá suporte quando
               precisar — porque a resposta é estrutural, não eventual.
             </p>
-            <div className={styles.pullquote} aria-label="Citação institucional">
-              <span className={styles.pullquoteBar} aria-hidden="true" />
-              <p>
-                "Reduzir o risco do cliente não é estratégia de marketing.
-                É a razão pela qual a AUREN existe."
-              </p>
-            </div>
+
           </motion.div>
 
           {/* Contrast cards */}
@@ -82,23 +76,7 @@ export default function SectionMercado() {
               </div>
             ))}
 
-            {/* Setores */}
-            <div className={styles.setores} aria-label="Setores atendidos">
-              <p className={styles.setoresLabel}>Setores atendidos</p>
-              <ul className={styles.setoresList} role="list">
-                {[
-                  "Clínicas de Medicina Estética",
-                  "Hospitais Privados",
-                  "Redes de Saúde",
-                  "Centros de Dermatologia",
-                ].map((s) => (
-                  <li key={s} className={styles.setoresItem}>
-                    <span className={styles.setoresDot} aria-hidden="true" />
-                    {s}
-                  </li>
-                ))}
-              </ul>
-            </div>
+            
           </motion.div>
         </div>
       </div>

@@ -8,7 +8,6 @@ import SectionValores from "@/app/components/sections/SectionValores/SectionValo
 import SectionMercado from "@/app/components/sections/SectionMercado/SectionMercado";
 import SectionSolucoes from "@/app/components/sections/SectionSolucoes/SectionSolucoes";
 import SectionIdentidade from "@/app/components/sections/SectionIdentidade/SectionIdentidade";
-import SectionExperiencia from "@/app/components/sections/SectionExperiencia/SectionExperiencia";
 import SectionContato from "@/app/components/sections/SectionContato/SectionContato";
 
 export default function Home() {
@@ -39,9 +38,6 @@ export default function Home() {
 
         {/* Task 2.7 — Nossa Identidade: significado da marca */}
         <SectionIdentidade />
-
-        {/* Task 2.8 — A Experiência AUREN: timeline da jornada */}
-        <SectionExperiencia />
 
         {/* Task 2.9 — Contato: formulário consultivo */}
         <SectionContato />

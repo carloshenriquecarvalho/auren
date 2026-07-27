@@ -38,10 +38,10 @@ export default function Navbar() {
             {/* Logo */}
             <Link href="#hero" className={styles.logo} onClick={closeMenu} aria-label="AUREN — início">
               <Image
-                src="/logo-transparente.png"
+                src="/logo-fundo-removido-sem-texto.png"
                 alt="AUREN Equipamentos Médicos"
-                width={150}
-                height={120}
+                width={200}
+                height={160}
                 className={styles.logoImg}
                 priority
               />

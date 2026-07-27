@@ -15,7 +15,7 @@ const significados = [
   {
     id: "tracos",
     label: "Os três traços",
-    desc: "Compromisso, direção e propósito. Os três pilares que orientam cada decisão — do modelo de atendimento ao critério de seleção de equipamentos.",
+    desc: "Compromisso, direção e propósito. Os três pilares que orientam cada decisão, desde modelo de atendimento ao critério de esselência.",
   },
   {
     id: "forma",
@@ -42,10 +42,10 @@ export default function SectionIdentidade() {
           >
             <div className={styles.symbolFrame}>
               <Image
-                src="/logo-transparente.png"
+                src="/logo-fundo-removido-sem-texto.png"
                 alt="Símbolo da AUREN"
-                width={200}
-                height={200}
+                width={500}
+                height={500}
                 className={styles.symbol}
                 aria-hidden="true"
               />

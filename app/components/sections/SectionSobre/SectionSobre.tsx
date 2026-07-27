@@ -2,7 +2,7 @@
 "use client";
 
 import { useRef } from "react";
-import { motion, useInView, Variants } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 import styles from "./SectionSobre.module.css";
 
 const atributos = [
@@ -83,10 +83,11 @@ export default function SectionSobre() {
               initial="hidden"
               animate={inView ? "visible" : "hidden"}
             >
-              A AUREN é uma empresa de tecnologia médica que atua no segmento
-              de medicina estética de alta performance. Nossa cultura é
-              construída sobre a crença de que o relacionamento com o cliente
-              é o produto mais importante que entregamos.
+              A AUREN é uma empresa especializada na comercialização consultiva
+              de equipamentos para estética profissional. Trabalhamos com
+              equipamentos originais da Medical San, comercializados diretamente
+              da fábrica — sem intermediários — e com total suporte ao cliente
+              durante toda a jornada de aquisição e uso.
             </motion.p>
 
             <motion.p
@@ -95,10 +96,11 @@ export default function SectionSobre() {
               initial="hidden"
               animate={inView ? "visible" : "hidden"}
             >
-              Não somos a empresa com o maior portfólio. Somos a empresa
-              que conhece profundamente o que oferece, que conhece as
-              implicações clínicas de cada decisão e que permanece presente
-              muito além da assinatura do contrato.
+              Não somos fabricantes. Somos especialistas no que selecionamos
+              e comercializamos. Conhecemos profundamente cada equipamento
+              do nosso portfólio e permanecemos presentes bem além da
+              assinatura do contrato — porque nossa cultura é construída
+              sobre relacionamento, não sobre volume.
             </motion.p>
 
             <motion.p
@@ -107,10 +109,10 @@ export default function SectionSobre() {
               initial="hidden"
               animate={inView ? "visible" : "hidden"}
             >
-              Nossa equipe é formada por profissionais com trajetória técnica
-              no setor de saúde. A linguagem que usamos com nossos clientes
-              é a linguagem de quem compreende a realidade clínica — não apenas
-              as especificações do equipamento.
+              Nossa equipe é formada por especialistas em venda consultiva
+              para o mercado de estética. A linguagem que usamos é a linguagem
+              de quem compreende a realidade da clínica — seus desafios,
+              seu público e seus objetivos de resultado.
             </motion.p>
           </div>
         </div>

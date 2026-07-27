@@ -46,10 +46,10 @@ export default function Footer() {
           <div className={styles.contact}>
             <p className={styles.contactLabel}>Fale conosco</p>
             <a href="mailto:contato@auren.com.br" className={styles.contactLink} id="footer-email">
-              contato@auren.com.br
+              saraseixas1121@gmail.com
             </a>
-            <a href="tel:+556100000000" className={styles.contactLink} id="footer-phone">
-              +55 (61) 0000-0000
+            <a href="https://wa.me/556193322477" className={styles.contactLink} id="footer-phone">
+              (61) 9332-2477
             </a>
           </div>
         </div>
@@ -58,11 +58,11 @@ export default function Footer() {
 
         <div className={styles.bottom}>
           <p className={styles.copy}>
-            © {year} AUREN Equipamentos Médicos. Todos os direitos reservados.
+            © {year} AUREN Equipamentos. Todos os direitos reservados.
           </p>
-          <p className={styles.legal}>
+          {/* <p className={styles.legal}>
             CNPJ: 00.000.000/0001-00 &nbsp;|&nbsp; Brasília, DF — Brasil
-          </p>
+          </p> */}
         </div>
       </div>
     </footer>

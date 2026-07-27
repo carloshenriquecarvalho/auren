@@ -7,24 +7,24 @@ import styles from "./SectionSolucoes.module.css";
 const solucoes = [
   {
     id: "hakon",
-    tag: "Laser & RF",
+    tag: "Laser",
     name: "Hakon",
-    desc: "Plataforma de radiofrequência fracionada de última geração. Alta eficácia clínica para rejuvenescimento dérmico profundo com mínimo tempo de downtime.",
-    specs: ["RF Fracionado", "Tripolar", "Aprovado ANVISA"],
+    desc: "O Hakon combina potência, segurança e conforto para proporcionar uma depilação a laser eficiente em diferentes tipos de pele, oferecendo resultados duradouros e uma experiência mais confortável ao paciente.",
+    specs: ["Tripolar", "Aprovado ANVISA"],
   },
   {
     id: "hegon",
-    tag: "Ultrassom",
+    tag: "CO₂ Fracionado",
     name: "Hegon",
-    desc: "Tecnologia de ultrassom microfocado para lifting não-cirúrgico. Protocolo preciso, resultado progressivo — sem incisões, sem interrupção da rotina do paciente.",
-    specs: ["HIFU", "Multi-depth", "Imagem em tempo real"],
+    desc: "O Hegon utiliza a tecnologia de laser de CO₂ fracionado para promover a renovação da pele com precisão e segurança. É indicado para tratamentos de rejuvenescimento, cicatrizes, estrias e linhas de expressão, estimulando a produção natural de colágeno e proporcionando resultados eficazes.",
+    specs: ["CO₂", "Multi-depth"],
   },
   {
-    id: "co2",
-    tag: "Laser CO₂",
-    name: "CO₂ Fracionado",
-    desc: "Laser de dióxido de carbono fracionado para resurfacing avançado. Padrão-ouro em tratamentos de cicatrizes, poros, linhas finas e textura irregular.",
-    specs: ["CO₂ 10.600nm", "Modo ablativo e não-ablativo", "Controle de profundidade"],
+    id: "hifu",
+    tag: "HiFu",
+    name: "Ptolomeu",
+    desc: "O Ptolomeu utiliza a tecnologia de ultrassom microfocado para estimular a produção de colágeno em diferentes camadas da pele. Indicado para tratamentos de flacidez e rejuvenescimento facial e corporal, promove efeito lifting de forma não invasiva, com segurança e resultados naturais.",
+    specs: ["Ultrassom Microfocado"],
   },
 ];
 
@@ -57,11 +57,12 @@ export default function SectionSolucoes() {
             <span className="section-label" style={{ color: "var(--gold-light)" }}>Soluções</span>
           </div>
           <h2 id="solucoes-title" className={styles.title}>
-            Equipamentos de referência clínica
+            Tecnologias reconhecidas pelo mercado
           </h2>
           <p className={styles.subtitle}>
-            Cada linha foi selecionada por evidência clínica, solidez técnica
-            e compatibilidade com a rotina dos profissionais que atendem.
+            Portfólio selecionado de equipamentos originais da Medical San,
+            comercializados pela AUREN com suporte técnico e acompanhamento
+            consultivo dedicado para clínicas de estética.
           </p>
         </motion.div>
 
@@ -101,9 +102,9 @@ export default function SectionSolucoes() {
                   href="#contato"
                   className={styles.cardCta}
                   id={`solucao-cta-${s.id}`}
-                  aria-label={`Conhecer mais sobre ${s.name}`}
+                  aria-label={`Solicitar informações sobre ${s.name}`}
                 >
-                  Conhecer este equipamento →
+                  Solicitar informações →
                 </a>
               </div>
             </motion.article>
@@ -117,7 +118,7 @@ export default function SectionSolucoes() {
           animate={inView ? { opacity: 1 } : {}}
           transition={{ delay: 0.6, duration: 0.8 }}
         >
-          Todas as linhas possuem registro ANVISA e suporte técnico especializado em território nacional.
+          Todas as linhas possuem registro ANVISA.
         </motion.p>
       </div>
     </section>

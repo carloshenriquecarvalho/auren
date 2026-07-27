@@ -38,6 +38,7 @@ export default function SectionContato() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    window.open("https://wa.me/556193322477", "_blank", "noopener,noreferrer");
     setSubmitted(true);
   };
 
@@ -58,8 +59,8 @@ export default function SectionContato() {
             </h2>
             <p className={styles.ctaSub}>
               Sem compromisso imediato. Um consultor AUREN irá compreender
-              seu contexto clínico e apresentar as alternativas mais adequadas
-              para a sua realidade — sem pressão, sem padronização.
+              a realidade da sua clínica e apresentar as alternativas mais adequadas
+              para o seu negócio — sem pressão, sem padronização.
             </p>
           </motion.div>
         </div>
@@ -140,13 +141,13 @@ export default function SectionContato() {
                       />
                     </div>
                     <div className={styles.field}>
-                      <label htmlFor="instituicao" className={styles.label}>Clínica / Hospital / Instituição *</label>
+                      <label htmlFor="instituicao" className={styles.label}>Clínica de Estética / Empresa *</label>
                       <input
                         id="instituicao" name="instituicao" type="text" required
                         className={styles.input}
                         value={form.instituicao}
                         onChange={handleChange}
-                        placeholder="Nome da instituição"
+                        placeholder="Nome da clínica ou empresa"
                         autoComplete="organization"
                       />
                     </div>

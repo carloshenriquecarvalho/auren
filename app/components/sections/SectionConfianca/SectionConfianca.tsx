@@ -14,8 +14,8 @@ const pilares = [
         <path d="M10 16l4 4 8-8" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"/>
       </svg>
     ),
-    title: "Padrões Técnicos Internacionais",
-    body: "Cada equipamento do portfólio AUREN atende às exigências regulatórias da ANVISA e está alinhado às referências técnicas internacionais do setor de medicina estética.",
+    title: "Padrões Técnicos",
+    body: "Cada equipamento do portfólio AUREN atende às exigências regulatórias da ANVISA e está alinhado às referências técnicas do setor de estética.",
   },
   {
     id: "consultivo",
@@ -25,7 +25,7 @@ const pilares = [
       </svg>
     ),
     title: "Postura Consultiva",
-    body: "Não existe proposta padrão na AUREN. Cada atendimento começa pela escuta do contexto clínico — volume, perfil e objetivos — antes de qualquer recomendação.",
+    body: "Não existe proposta padrão na AUREN. Cada atendimento começa pela escuta da realidade da clínica — seu perfil, volume de atendimento e objetivos — antes de qualquer recomendação.",
   },
   {
     id: "premium",
@@ -35,7 +35,7 @@ const pilares = [
       </svg>
     ),
     title: "Atuação no Mercado Premium",
-    body: "A AUREN posiciona-se no segmento de alta performance, onde o critério de decisão não é o preço do equipamento, mas o retorno clínico, a confiabilidade e a suporte técnico que o acompanha.",
+    body: "A AUREN posiciona-se no segmento de alta performance para estética, onde o critério de decisão não é o preço do equipamento, mas o retorno para a clínica, a confiabilidade da tecnologia e o suporte técnico que a acompanha.",
   },
   {
     id: "continuidade",

@@ -3,6 +3,7 @@
 import { useEffect, useRef } from "react";
 import { motion, Variants } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 import styles from "./SectionHero.module.css";
 
 export default function SectionHero() {
@@ -92,9 +93,7 @@ export default function SectionHero() {
           initial="hidden"
           animate="visible"
         >
-          <motion.span className={`${styles.label} section-label`} variants={up}>
-            Tecnologia Médica Premium
-          </motion.span>
+        
 
           {/* Task 2.1 — headline baseada em "equipamentos podem ser encontrados
               em muitos lugares; confiança, não" */}
@@ -105,10 +104,10 @@ export default function SectionHero() {
           </motion.h1>
 
           <motion.p className={styles.sub} variants={up}>
-            A AUREN opera na interseção entre tecnologia médica de alto padrão
-            e parceria de longo prazo. Cada solução que entregamos carrega
-            responsabilidade técnica, presença e continuidade — do primeiro
-            contato ao suporte continuado.
+            A AUREN é especializada na comercialização consultiva de equipamentos
+            para estética profissional — com atendimento personalizado, suporte
+            técnico e presença contínua, do primeiro contato ao acompanhamento
+            de longo prazo.
           </motion.p>
 
           <motion.div className={styles.goldLine} variants={up} aria-hidden="true" />
@@ -122,15 +121,24 @@ export default function SectionHero() {
               Conhecer a AUREN
             </Link>
           </motion.div>
+        </motion.div>
 
-          <motion.div className={styles.statLine} variants={up} aria-label="Setores atendidos">
-            {["Clínicas", "Hospitais", "Redes de Saúde"].map((item, i) => (
-              <span key={item} className={styles.statItem}>
-                {i > 0 && <span className={styles.statDot} aria-hidden="true" />}
-                {item}
-              </span>
-            ))}
-          </motion.div>
+        {/* Logo direita */}
+        <motion.div
+          className={styles.heroLogoSide}
+          initial={{ opacity: 0, scale: 0.92 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1], delay: 0.3 }}
+          aria-hidden="true"
+        >
+          <Image
+            src="/logo-fundo-removido-sem-texto.png"
+            alt=""
+            width={420}
+            height={420}
+            className={styles.heroLogo}
+            priority
+          />
         </motion.div>
       </div>
 
