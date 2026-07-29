@@ -1,5 +1,5 @@
 .section {
-  background: var(--black-rich);
+  background: var(--white-pure);
   padding-block: var(--section-padding-y);
 }
 
@@ -35,7 +35,7 @@
   font-family: var(--font-serif);
   font-size: var(--text-display-lg);
   font-weight: 400;
-  color: var(--white-pure);
+  color: var(--black-deep);
   letter-spacing: -0.02em;
   line-height: 1.12;
   max-width: 560px;
@@ -45,7 +45,7 @@
   font-family: var(--font-sans);
   font-size: var(--text-body-lg);
   font-weight: 300;
-  color: var(--graphite-400);
+  color: var(--graphite-600);
   line-height: 1.7;
   max-width: 520px;
 }
@@ -55,15 +55,15 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1px;
-  background: rgba(255,255,255,0.06);
-  border: 1px solid rgba(255,255,255,0.06);
+  background: var(--graphite-100);
+  border: 1px solid var(--graphite-100);
   border-radius: var(--radius-md);
   overflow: hidden;
 }
 
 /* Card */
 .card {
-  background: var(--black-deep);
+  background: var(--off-white);
   padding: clamp(28px, 3.5vw, 48px);
   display: flex;
   flex-direction: column;
@@ -74,7 +74,7 @@
 }
 
 .card:hover {
-  background: #141312;
+  background: var(--graphite-50);
 }
 
 .cardTop {
@@ -96,14 +96,14 @@
   font-family: var(--font-serif);
   font-size: var(--text-display-md);
   font-weight: 400;
-  color: var(--white-pure);
+  color: var(--black-deep);
   letter-spacing: -0.01em;
 }
 
 .cardDesc {
   font-family: var(--font-sans);
   font-size: var(--text-body-sm);
-  color: var(--graphite-400);
+  color: var(--graphite-700);
   line-height: 1.75;
 }
 
@@ -122,7 +122,7 @@
   gap: 8px;
   font-family: var(--font-sans);
   font-size: var(--text-body-sm);
-  color: var(--graphite-600);
+  color: var(--graphite-700);
 }
 
 .specDot {
@@ -151,9 +151,9 @@
   margin-top: var(--space-8);
   font-family: var(--font-sans);
   font-size: var(--text-body-sm);
-  color: var(--graphite-600);
+  color: var(--graphite-700);
   text-align: center;
-  border-top: 1px solid rgba(255,255,255,0.06);
+  border-top: 1px solid var(--graphite-100);
   padding-top: var(--space-6);
 }
 

@@ -203,8 +203,8 @@ p {
 
 /* Scrollbar */
 ::-webkit-scrollbar { width: 5px; }
-::-webkit-scrollbar-track { background: var(--black-rich); }
-::-webkit-scrollbar-thumb { background: var(--gold-muted); border-radius: 3px; }
+::-webkit-scrollbar-track { background: var(--graphite-50); }
+::-webkit-scrollbar-thumb { background: var(--gold-border-hover); border-radius: 3px; }
 ::-webkit-scrollbar-thumb:hover { background: var(--gold-signature); }
 
 /* Focus ring — visível e com contraste */

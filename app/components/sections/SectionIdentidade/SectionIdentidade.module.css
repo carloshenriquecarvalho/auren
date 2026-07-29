@@ -1,5 +1,5 @@
 .section {
-  background: var(--black-rich);
+  background: var(--off-white);
   padding-block: var(--section-padding-y);
 }
 
@@ -85,7 +85,7 @@
   font-family: var(--font-serif);
   font-size: var(--text-display-lg);
   font-weight: 400;
-  color: var(--white-pure);
+  color: var(--black-deep);
   letter-spacing: -0.02em;
   line-height: 1.15;
 }
@@ -94,7 +94,7 @@
   font-family: var(--font-sans);
   font-size: var(--text-body-lg);
   font-weight: 300;
-  color: var(--graphite-400);
+  color: var(--graphite-600);
   line-height: 1.75;
 }
 
@@ -103,13 +103,13 @@
   display: flex;
   flex-direction: column;
   gap: 1px;
-  background: rgba(255,255,255,0.05);
+  background: var(--graphite-100);
   border-radius: var(--radius-sm);
   overflow: hidden;
 }
 
 .meaningItem {
-  background: var(--black-deep);
+  background: var(--white-pure);
   padding: var(--space-4) var(--space-5);
   display: flex;
   flex-direction: column;
@@ -121,7 +121,7 @@
 
 .meaningItem:hover {
   border-left-color: var(--gold-signature);
-  background: #141312;
+  background: var(--off-white);
 }
 
 .meaningLabel {
@@ -135,7 +135,7 @@
 .meaningDesc {
   font-family: var(--font-sans);
   font-size: var(--text-body-sm);
-  color: var(--graphite-400);
+  color: var(--graphite-600);
   line-height: 1.7;
 }
 

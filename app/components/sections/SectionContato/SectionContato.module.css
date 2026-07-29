@@ -1,6 +1,6 @@
 /* CTA Strip */
 .ctaStrip {
-  background: var(--black-deep);
+  background: var(--white-pure);
   padding-block: var(--space-16);
   border-bottom: 1px solid var(--gold-border);
 }
@@ -31,7 +31,7 @@
   font-family: var(--font-serif);
   font-size: var(--text-display-lg);
   font-weight: 400;
-  color: var(--white-pure);
+  color: var(--black-deep);
   letter-spacing: -0.02em;
   line-height: 1.12;
 }
@@ -40,7 +40,7 @@
   font-family: var(--font-sans);
   font-size: var(--text-body-lg);
   font-weight: 300;
-  color: var(--graphite-400);
+  color: var(--graphite-600);
   line-height: 1.7;
 }
 
@@ -199,7 +199,7 @@ a.infoValue:hover { color: var(--black-deep); }
   font-weight: 500;
   letter-spacing: 0.04em;
   color: var(--white-pure);
-  background: var(--black-deep);
+  background: var(--gold-signature);
   border: 1px solid var(--gold-signature);
   border-radius: var(--radius-sm);
   padding: 14px 32px;
@@ -210,8 +210,8 @@ a.infoValue:hover { color: var(--black-deep); }
 }
 
 .submit:hover {
-  background: #232120;
-  border-color: var(--gold-light);
+  background: var(--gold-muted);
+  border-color: var(--gold-muted);
 }
 
 /* Success state */
