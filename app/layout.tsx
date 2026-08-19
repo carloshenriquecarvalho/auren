@@ -19,22 +19,22 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "AUREN Equipamentos Médicos — Tecnologia. Compromisso. Precisão.",
+  title: "AUREN — Tecnologias Premium para Estética. Tecnologia. Confiança. Propósito.",
   description:
-    "A AUREN oferece equipamentos de medicina estética de alto padrão para clínicas e redes hospitalares no Brasil. Confiança como ativo central, do primeiro atendimento à parceria de longo prazo.",
+    "A AUREN oferece tecnologias de medicina estética de alto padrão para clínicas no Brasil. Confiança como ativo central, do primeiro atendimento à parceria de longo prazo.",
   keywords: [
-    "equipamentos médicos",
+    "tecnologias estética",
     "medicina estética",
     "hakon",
     "hegon",
     "CO2",
-    "equipamentos hospitalares",
+    "tecnologias estéticas premium",
     "tecnologia médica brasil",
   ],
   openGraph: {
-    title: "AUREN Equipamentos Médicos",
+    title: "AUREN — Tecnologias Premium para Estética",
     description:
-      "Tecnologia médica premium com compromisso, direção e propósito.",
+      "Tecnologia premium com confiança, direção e propósito.",
     locale: "pt_BR",
     type: "website",
   },

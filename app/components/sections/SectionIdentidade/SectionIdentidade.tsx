@@ -62,7 +62,7 @@ export default function SectionIdentidade() {
               transition={{ duration: 0.7 }}
             >
               <span className={styles.divider} aria-hidden="true" />
-              <span className="section-label" style={{ color: "var(--gold-light)" }}>
+              <span className="section-label" style={{ color: "var(--gold-signature)" }}>
                 Nossa Identidade
               </span>
             </motion.div>

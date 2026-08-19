@@ -9,22 +9,22 @@ const solucoes = [
     id: "hakon",
     tag: "Laser",
     name: "Hakon",
-    desc: "O Hakon combina potência, segurança e conforto para proporcionar uma depilação a laser eficiente em diferentes tipos de pele, oferecendo resultados duradouros e uma experiência mais confortável ao paciente.",
-    specs: ["Tripolar", "Aprovado ANVISA"],
+    desc: "O Hakon é o laser de depilação da Medical San com 4 comprimentos de onda — Rubi, Alexandrite, Diodo e Nd:YAG — para atuar em diferentes profundidades de folículos pilosos e todos os fototipos de pele, com ponteira resfriada a -12°C.",
+    specs: ["4 Comprimentos de Onda", "Aprovado ANVISA"],
   },
   {
     id: "hegon",
     tag: "CO₂ Fracionado",
     name: "Hegon",
-    desc: "O Hegon utiliza a tecnologia de laser de CO₂ fracionado para promover a renovação da pele com precisão e segurança. É indicado para tratamentos de rejuvenescimento, cicatrizes, estrias e linhas de expressão, estimulando a produção natural de colágeno e proporcionando resultados eficazes.",
-    specs: ["CO₂", "Multi-depth"],
+    desc: "O Hegon é o laser CO₂ fracionado padrão ouro para resurfacing, com resultados em uma única sessão. Com 60W de potência, disparos ilimitados e ultravelozes, o maior número de ponteiras do mercado e até 20 stakes configuráveis.",
+    specs: ["CO₂ 10.600nm", "Padrão Ouro Resurfacing"],
   },
   {
     id: "hifu",
-    tag: "HiFu",
+    tag: "RF Microagulhada",
     name: "Ptolomeu",
-    desc: "O Ptolomeu utiliza a tecnologia de ultrassom microfocado para estimular a produção de colágeno em diferentes camadas da pele. Indicado para tratamentos de flacidez e rejuvenescimento facial e corporal, promove efeito lifting de forma não invasiva, com segurança e resultados naturais.",
-    specs: ["Ultrassom Microfocado"],
+    desc: "O Ptolomeu utiliza radiofrequência microagulhada para estimular a produção de colágeno em diferentes camadas da pele. Com 4 cartuchos e profundidades de 0,2 a 7mm, oferece tratamentos de lifting não invasivo para face e corpo.",
+    specs: ["RF Microagulhada", "0,2 a 7mm"],
   },
 ];
 
@@ -54,14 +54,14 @@ export default function SectionSolucoes() {
         >
           <div className={styles.labelRow}>
             <span className={styles.divider} aria-hidden="true" />
-            <span className="section-label" style={{ color: "var(--gold-light)" }}>Soluções</span>
+            <span className="section-label" style={{ color: "var(--gold-signature)" }}>Soluções</span>
           </div>
           <h2 id="solucoes-title" className={styles.title}>
             Tecnologias reconhecidas pelo mercado
           </h2>
           <p className={styles.subtitle}>
-            Portfólio selecionado de equipamentos originais da Medical San,
-            comercializados pela AUREN com suporte técnico e acompanhamento
+            Portfólio selecionado de tecnologias originais da Medical San,
+            comercializadas pela AUREN com suporte técnico e acompanhamento
             consultivo dedicado para clínicas de estética.
           </p>
         </motion.div>

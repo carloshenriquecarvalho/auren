@@ -6,10 +6,10 @@ import Image from "next/image";
 import styles from "./Navbar.module.css";
 
 const navLinks = [
-  { label: "A Empresa", href: "#quem-somos" },
-  { label: "Valores", href: "#valores" },
-  { label: "Soluções", href: "#solucoes" },
-  { label: "Experiência", href: "#experiencia" },
+  { label: "Sobre a Empresa", href: "/sobre" },
+  { label: "Nossa História", href: "#historia" },
+  { label: "Tecnologias", href: "#showcase" },
+  { label: "Nossas Marcas", href: "#marcas" },
 ];
 
 export default function Navbar() {

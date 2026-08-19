@@ -1,0 +1,221 @@
+.section {
+  background: var(--off-white);
+  padding-block: var(--section-padding-y);
+}
+
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin-inline: auto;
+  padding-inline: var(--section-padding-x);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-10);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  max-width: 720px;
+}
+
+.labelRow {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.divider {
+  display: block;
+  width: 32px;
+  height: 1px;
+  background: var(--gold-signature);
+  flex-shrink: 0;
+}
+
+.title {
+  font-family: var(--font-serif);
+  font-size: var(--text-display-lg);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  color: var(--black-deep);
+}
+
+.subtitle {
+  font-family: var(--font-sans);
+  font-size: var(--text-body-lg);
+  font-weight: 300;
+  color: var(--graphite-600);
+  line-height: 1.7;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(16px, 2vw, 28px);
+}
+
+.card {
+  background: var(--white-pure);
+  border: 1px solid var(--graphite-100);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  transition: box-shadow var(--duration-normal) var(--ease-out),
+              transform var(--duration-normal) var(--ease-out),
+              border-color var(--duration-normal) var(--ease-out);
+}
+
+.card:hover {
+  box-shadow: 0 16px 48px rgba(184, 150, 46, 0.12);
+  transform: translateY(-6px);
+  border-color: var(--gold-border-hover);
+}
+
+.cardLink {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  text-decoration: none;
+  color: inherit;
+}
+
+.cardImage {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background: var(--graphite-50);
+}
+
+.img {
+  transition: transform var(--duration-slow) var(--ease-out);
+}
+
+.card:hover .img {
+  transform: scale(1.05);
+}
+
+.cardBadge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  font-family: var(--font-sans);
+  font-size: var(--text-label);
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--black-deep);
+  background: rgba(247, 245, 240, 0.92);
+  backdrop-filter: blur(8px);
+  border-radius: 2px;
+  padding: 4px 10px;
+}
+
+.cardBody {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  padding: var(--space-4) var(--space-4) var(--space-5);
+  flex: 1;
+}
+
+.cardTag {
+  font-family: var(--font-sans);
+  font-size: var(--text-label);
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold-signature);
+}
+
+.cardName {
+  font-family: var(--font-serif);
+  font-size: var(--text-display-md);
+  font-weight: 400;
+  color: var(--black-deep);
+  line-height: 1.15;
+}
+
+.cardDesc {
+  font-family: var(--font-sans);
+  font-size: var(--text-body-sm);
+  font-weight: 300;
+  color: var(--graphite-600);
+  line-height: 1.65;
+  flex: 1;
+}
+
+.specs {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: var(--space-1);
+}
+
+.spec {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-sans);
+  font-size: var(--text-body-sm);
+  color: var(--graphite-600);
+}
+
+.specDot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--gold-signature);
+  flex-shrink: 0;
+}
+
+.cardCta {
+  font-family: var(--font-sans);
+  font-size: var(--text-body-sm);
+  font-weight: 500;
+  color: var(--gold-signature);
+  letter-spacing: 0.04em;
+  margin-top: var(--space-2);
+  transition: letter-spacing var(--duration-normal) var(--ease-out);
+}
+
+.card:hover .cardCta {
+  letter-spacing: 0.08em;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+.note {
+  font-family: var(--font-sans);
+  font-size: var(--text-body-sm);
+  color: var(--graphite-400);
+}
+
+.viewAll {
+  font-family: var(--font-sans);
+  font-size: var(--text-body-sm);
+  font-weight: 500;
+  color: var(--gold-signature);
+  letter-spacing: 0.04em;
+  transition: color var(--duration-fast) var(--ease-out),
+              letter-spacing var(--duration-normal) var(--ease-out);
+}
+
+.viewAll:hover {
+  color: var(--gold-muted);
+  letter-spacing: 0.08em;
+}
+
+@media (max-width: 900px) {
+  .grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 600px) {
+  .grid { grid-template-columns: 1fr; }
+}

@@ -1,13 +1,11 @@
 import Navbar from "@/app/components/Navbar/Navbar";
 import Footer from "@/app/components/Footer/Footer";
+import WhatsAppFloat from "@/app/components/WhatsAppFloat/WhatsAppFloat";
 import SectionHero from "@/app/components/sections/SectionHero/SectionHero";
-import SectionConfianca from "@/app/components/sections/SectionConfianca/SectionConfianca";
-import SectionSobre from "@/app/components/sections/SectionSobre/SectionSobre";
-import SectionEssencia from "@/app/components/sections/SectionEssencia/SectionEssencia";
-import SectionValores from "@/app/components/sections/SectionValores/SectionValores";
-import SectionMercado from "@/app/components/sections/SectionMercado/SectionMercado";
-import SectionSolucoes from "@/app/components/sections/SectionSolucoes/SectionSolucoes";
-import SectionIdentidade from "@/app/components/sections/SectionIdentidade/SectionIdentidade";
+import SectionHistoria from "@/app/components/sections/SectionHistoria/SectionHistoria";
+import SectionBeneficios from "@/app/components/sections/SectionBeneficios/SectionBeneficios";
+import SectionShowcase from "@/app/components/sections/SectionShowcase/SectionShowcase";
+import SectionMarcas from "@/app/components/sections/SectionMarcas/SectionMarcas";
 import SectionContato from "@/app/components/sections/SectionContato/SectionContato";
 
 export default function Home() {
@@ -15,34 +13,15 @@ export default function Home() {
     <>
       <Navbar />
       <main id="main-content">
-        {/* Task 2.1 — Hero com novo posicionamento */}
         <SectionHero />
-
-        {/* Task 2.2 — Credibilidade / prova sem dados inventados */}
-        <SectionConfianca />
-
-        {/* Task 2.6 — Quem Somos: personalidade e cultura humanizada */}
-        <SectionSobre />
-
-        {/* Task 2.3 — Essência / Propósito / Missão / Visão */}
-        <SectionEssencia />
-
-        {/* Task 2.4 — 5 Valores: Fé, Integridade, Excelência, Relacionamentos, Responsabilidade */}
-        <SectionValores />
-
-        {/* Task 2.5 — Como enxergamos o mercado: ecossistema de confiança */}
-        <SectionMercado />
-
-        {/* Soluções — Hakon, Hegon, CO2 */}
-        <SectionSolucoes />
-
-        {/* Task 2.7 — Nossa Identidade: significado da marca */}
-        <SectionIdentidade />
-
-        {/* Task 2.9 — Contato: formulário consultivo */}
+        <SectionHistoria />
+        <SectionBeneficios />
+        <SectionShowcase />
+        <SectionMarcas />
         <SectionContato />
       </main>
       <Footer />
+      <WhatsAppFloat />
     </>
   );
 }

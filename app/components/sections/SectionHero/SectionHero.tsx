@@ -78,33 +78,74 @@ export default function SectionHero() {
       {/* Watermark symbol */}
       <div className={styles.watermark} aria-hidden="true">
         <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="80"  cy="100" r="52" stroke="currentColor" strokeWidth="1.5" fill="none" />
+          <circle cx="80" cy="100" r="52" stroke="currentColor" strokeWidth="1.5" fill="none" />
           <circle cx="120" cy="100" r="52" stroke="currentColor" strokeWidth="1.5" fill="none" />
-          <line x1="100" y1="72"  x2="100" y2="86"  stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
-          <line x1="100" y1="97"  x2="100" y2="103" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
-          <line x1="100" y1="114" x2="100" y2="128" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+          <line x1="100" y1="72" x2="100" y2="86" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+          <line x1="100" y1="97" x2="100" y2="103" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+          <line x1="100" y1="114" x2="100" y2="128" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
         </svg>
       </div>
 
       <div className={styles.container}>
+        {/* Logo — esquerda */}
+        <motion.div
+          className={styles.heroLogoSide}
+          initial={{ opacity: 0, scale: 0.92 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1], delay: 0.3 }}
+        >
+          <Image
+            src="/logo-principal.png"
+            alt="Símbolo AUREN"
+            width={700}
+            height={700}
+            className={styles.heroLogo}
+            priority
+          />
+          {/* Logos circulares dos parceiros */}
+          <div className={styles.partnerRow} aria-label="Parceiros AUREN">
+            <div className={styles.partnerItem} id="hero-parceiro-medical-san">
+              <div className={styles.partnerCircle}>
+                <Image
+                  src="/logo-medical-san.png"
+                  alt="Medical San"
+                  width={48}
+                  height={48}
+                  className={styles.partnerImg}
+                />
+              </div>
+              <span className={styles.partnerLabel}>Medical San</span>
+            </div>
+            <div className={styles.partnerDivider} aria-hidden="true" />
+            <div className={styles.partnerItem} id="hero-parceiro-cromatic">
+              <div className={styles.partnerCircle}>
+                <Image
+                  src="/logo-cromatic-1.png"
+                  alt="Cromatic"
+                  width={48}
+                  height={48}
+                  className={styles.partnerImg}
+                />
+              </div>
+              <span className={styles.partnerLabel}>Cromatic</span>
+            </div>
+          </div>
+        </motion.div>
+
         <motion.div
           className={styles.content}
           variants={stagger}
           initial="hidden"
           animate="visible"
         >
-        
-
-          {/* Task 2.1 — headline baseada em "equipamentos podem ser encontrados
-              em muitos lugares; confiança, não" */}
           <motion.h1 className={styles.headline} variants={up}>
-            Equipamentos existem <br />
-            em muitos lugares. <br />
-            <em>Confiança, não.</em>
+            Tecnologias premium para estética
+            existem em muitos lugares,
+            <em> confiança não.</em>
           </motion.h1>
 
           <motion.p className={styles.sub} variants={up}>
-            A AUREN é especializada na comercialização consultiva de equipamentos
+            A AUREN é especializada na comercialização consultiva de tecnologias
             para estética profissional — com atendimento personalizado, suporte
             técnico e presença contínua, do primeiro contato ao acompanhamento
             de longo prazo.
@@ -117,28 +158,10 @@ export default function SectionHero() {
               Fale com um consultor AUREN
               <span className={styles.ctaArrow} aria-hidden="true">→</span>
             </Link>
-            <Link href="#quem-somos" className={styles.ctaSecondary} id="hero-cta-secondary">
-              Conhecer a AUREN
+            <Link href="#nossa-historia" className={styles.ctaSecondary} id="hero-cta-secondary">
+              Nossa história
             </Link>
           </motion.div>
-        </motion.div>
-
-        {/* Logo direita */}
-        <motion.div
-          className={styles.heroLogoSide}
-          initial={{ opacity: 0, scale: 0.92 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1], delay: 0.3 }}
-          aria-hidden="true"
-        >
-          <Image
-            src="/logo-fundo-removido-sem-texto.png"
-            alt=""
-            width={420}
-            height={420}
-            className={styles.heroLogo}
-            priority
-          />
         </motion.div>
       </div>
 

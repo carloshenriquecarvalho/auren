@@ -11,28 +11,28 @@ const blocos = [
     num: "01",
     label: "Essência",
     headline: "Confiança como ativo central.",
-    body: "A AUREN existe para ser a constante confiável em um mercado marcado pela incerteza. Não buscamos ocupar todos os segmentos — buscamos ser a escolha inquestionável no segmento de estética profissional, reconhecida pela integridade do processo tanto quanto pela qualidade dos equipamentos que selecionamos e comercializamos.",
+    body: "A AUREN existe para ser a constante confiável em um mercado marcado pela incerteza. Não buscamos ocupar todos os segmentos — buscamos ser a escolha inquestionável no segmento de estética profissional, reconhecida pela integridade do processo tanto quanto pela qualidade das tecnologias que selecionamos e comercializamos.",
   },
   {
     id: "proposito",
     num: "02",
     label: "Propósito",
     headline: "Segurança, tranquilidade e parceria.",
-    body: "Existimos para que clínicas de estética possam investir em tecnologia avançada com a segurança de quem tem um parceiro real ao lado — antes, durante e muito depois da entrega. Um parceiro que conhece o equipamento, acompanha o cliente e permanece disponível.",
+    body: "Existimos para que clínicas de estética possam investir em tecnologia avançada com a segurança de quem tem um parceiro real ao lado — antes, durante e muito depois da entrega. Um parceiro que conhece a tecnologia, acompanha o cliente e permanece disponível.",
   },
   {
     id: "missao",
     num: "03",
     label: "Missão",
     headline: "Tecnologia com responsabilidade, presença com propósito.",
-    body: "Comercializar equipamentos para estética avançada com atendimento consultivo, suporte técnico continuado e relacionamento de longo prazo — de forma que cada clínica atendida perceba na AUREN mais do que um fornecedor: um compromisso.",
+    body: "Comercializar tecnologias para estética avançada com atendimento consultivo, suporte técnico continuado e relacionamento de longo prazo — de forma que cada clínica atendida perceba na AUREN mais do que um fornecedor: um compromisso.",
   },
   {
     id: "visao",
     num: "04",
     label: "Visão",
     headline: "Ser a referência de confiança no mercado brasileiro.",
-    body: "Tornar-se a empresa mais respeitada na comercialização de equipamentos para estética profissional no Brasil — não pelo volume de vendas, mas pela profundidade dos relacionamentos, pela excelência consultiva e pela consistência do que entregamos ao longo do tempo.",
+    body: "Tornar-se a empresa mais respeitada na comercialização de tecnologias para estética profissional no Brasil — não pelo volume de vendas, mas pela profundidade dos relacionamentos, pela excelência consultiva e pela consistência do que entregamos ao longo do tempo.",
   },
 ];
 
@@ -54,7 +54,7 @@ export default function SectionEssencia() {
         >
           <div className={styles.labelRow}>
             <span className={styles.divider} aria-hidden="true" />
-            <span className="section-label" style={{ color: "var(--gold-light)" }}>
+            <span className="section-label" style={{ color: "var(--gold-signature)" }}>
               Identidade Institucional
             </span>
           </div>

@@ -9,7 +9,7 @@ const contrastes = [
   {
     id: "preco",
     lado: "O mercado comum",
-    desc: "Compete por preço. Reduz especificações para caber em tabelas. Trata equipamentos para estética como commodity e o pós-venda como custo.",
+    desc: "Compete por preço. Reduz especificações para caber em tabelas. Trata tecnologias para estética como commodity e o pós-venda como custo.",
   },
   {
     id: "confianca",
@@ -36,7 +36,7 @@ export default function SectionMercado() {
           >
             <div className={styles.labelRow}>
               <span className={styles.divider} aria-hidden="true" />
-              <span className="section-label" style={{ color: "var(--gold-light)" }}>
+              <span className="section-label" style={{ color: "var(--gold-signature)" }}>
                 Nossa Visão de Mercado
               </span>
             </div>

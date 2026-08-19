@@ -44,7 +44,7 @@ const valores = [
     title: "Responsabilidade",
     tag: "Responsabilidade",
     short: "Assumimos, integralmente, as consequências de cada decisão.",
-    full: "Cada equipamento do nosso portfólio é selecionado e comercializado com a consciência de que ele impacta diretamente o resultado da clínica e a experiência dos seus clientes. Essa consciência não nos paralisa — nos responsabiliza. E é exatamente esse nível de comprometimento que diferencia a AUREN.",
+    full: "Cada tecnologia do nosso portfólio é selecionada e comercializada com a consciência de que ela impacta diretamente o resultado da clínica e a experiência dos seus clientes. Essa consciência não nos paralisa — nos responsabiliza. E é exatamente esse nível de comprometimento que diferencia a AUREN.",
   },
 ];
 

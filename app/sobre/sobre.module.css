@@ -1,0 +1,375 @@
+.page {
+  min-height: 100dvh;
+}
+
+/* =====================
+   HERO
+   ===================== */
+.hero {
+  min-height: 100dvh;
+  background: var(--off-white);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding-top: var(--navbar-h);
+  padding-inline: var(--section-padding-x);
+  max-width: var(--max-width);
+  margin-inline: auto;
+  gap: clamp(32px, 4vw, 64px);
+}
+
+.heroInner {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+  max-width: 600px;
+}
+
+.heroBadge {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.heroTitle {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 4.2vw, 3.6rem);
+  font-weight: 400;
+  letter-spacing: -0.025em;
+  line-height: 1.1;
+  color: var(--black-deep);
+}
+
+.heroTitle em {
+  font-style: italic;
+  color: var(--gold-light);
+}
+
+.heroSub {
+  font-family: var(--font-sans);
+  font-size: var(--text-body-lg);
+  font-weight: 300;
+  color: var(--graphite-600);
+  line-height: 1.7;
+  max-width: 480px;
+}
+
+.heroAccent {
+  width: 56px;
+  height: 1px;
+  background: var(--gold-signature);
+}
+
+.heroLogoWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: drop-shadow(0 0 80px rgba(184, 150, 46, 0.2));
+  pointer-events: none;
+  user-select: none;
+}
+
+.heroLogo {
+  width: min(480px, 46vw);
+  height: auto;
+  object-fit: contain;
+  opacity: 0.92;
+}
+
+/* =====================
+   SECTIONS
+   ===================== */
+.section {
+  background: var(--white-pure);
+  padding-block: var(--section-padding-y);
+}
+
+.sectionAlt {
+  background: var(--off-white);
+  padding-block: var(--section-padding-y);
+}
+
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin-inline: auto;
+  padding-inline: var(--section-padding-x);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+}
+
+.sectionLabel {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.divider {
+  display: block;
+  width: 32px;
+  height: 1px;
+  background: var(--gold-signature);
+  flex-shrink: 0;
+}
+
+.sectionTitle {
+  font-family: var(--font-serif);
+  font-size: var(--text-display-lg);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  color: var(--black-deep);
+  max-width: 640px;
+}
+
+.sectionTitle em {
+  font-style: italic;
+  color: var(--gold-light);
+}
+
+/* =====================
+   TWO COLUMN
+   ===================== */
+.twoCol {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: clamp(40px, 6vw, 96px);
+  align-items: start;
+}
+
+.colLeft {
+  position: sticky;
+  top: calc(var(--navbar-h) + 32px);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.colRight {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.body {
+  font-family: var(--font-sans);
+  font-size: var(--text-body-lg);
+  font-weight: 300;
+  color: var(--graphite-600);
+  line-height: 1.8;
+}
+
+.bodyLarge {
+  font-family: var(--font-sans);
+  font-size: var(--text-body-lg);
+  font-weight: 300;
+  color: var(--graphite-600);
+  line-height: 1.8;
+}
+
+/* =====================
+   ESSÊNCIA
+   ===================== */
+.essenciaGrid {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: clamp(40px, 6vw, 96px);
+  align-items: start;
+}
+
+.essenciaQuote {
+  position: sticky;
+  top: calc(var(--navbar-h) + 32px);
+}
+
+.quote {
+  font-family: var(--font-serif);
+  font-size: var(--text-display-md);
+  font-weight: 400;
+  font-style: italic;
+  color: var(--graphite-700);
+  line-height: 1.5;
+  border-left: 2px solid var(--gold-signature);
+  padding-left: var(--space-4);
+}
+
+/* =====================
+   PROPÓSITO E VISÃO
+   ===================== */
+.pvGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(24px, 4vw, 64px);
+}
+
+.pvCard {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  padding: var(--space-6);
+  border: 1px solid var(--graphite-100);
+  border-top: 2px solid var(--gold-signature);
+  background: var(--white-pure);
+}
+
+.pvTitle {
+  font-family: var(--font-serif);
+  font-size: var(--text-display-md);
+  font-weight: 400;
+  color: var(--black-deep);
+  line-height: 1.2;
+}
+
+/* =====================
+   VALORES
+   ===================== */
+.valoresGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(16px, 2vw, 28px);
+}
+
+.valorCard {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-5);
+  border: 1px solid var(--graphite-100);
+  background: var(--white-pure);
+  transition: border-color var(--duration-normal) var(--ease-out);
+}
+
+.valorCard:hover {
+  border-color: var(--gold-border-hover);
+}
+
+.valorTitle {
+  font-family: var(--font-serif);
+  font-size: var(--text-display-md);
+  font-weight: 400;
+  color: var(--black-deep);
+}
+
+/* =====================
+   EXPERIÊNCIA
+   ===================== */
+.experienciaGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-6) clamp(40px, 6vw, 96px);
+}
+
+/* =====================
+   COMPROMISSO
+   ===================== */
+.compromissoInner {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+  max-width: 780px;
+  margin-inline: auto;
+  text-align: center;
+  align-items: center;
+}
+
+.compromissoQuote {
+  font-family: var(--font-serif);
+  font-size: var(--text-display-md);
+  font-weight: 400;
+  font-style: italic;
+  color: var(--graphite-700);
+  line-height: 1.5;
+  border-left: none;
+  border-top: 1px solid var(--gold-border);
+  border-bottom: 1px solid var(--gold-border);
+  padding-block: var(--space-5);
+  text-align: center;
+}
+
+.ctaBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-sans);
+  font-size: var(--text-body-md);
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: var(--black-deep);
+  background: transparent;
+  border: 1px solid var(--gold-signature);
+  border-radius: var(--radius-sm);
+  padding: 14px 32px;
+  margin-top: var(--space-3);
+  transition: background var(--duration-normal) var(--ease-out),
+              color var(--duration-fast) var(--ease-out);
+}
+
+.ctaBtn:hover {
+  background: var(--gold-signature);
+  color: var(--white-pure);
+}
+
+/* =====================
+   RESPONSIVE
+   ===================== */
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr;
+    min-height: auto;
+    padding-top: calc(var(--navbar-h) + 32px);
+    padding-bottom: var(--section-padding-y);
+  }
+
+  .heroLogoWrap {
+    display: none;
+  }
+
+  .twoCol,
+  .essenciaGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .colLeft {
+    position: static;
+  }
+
+  .essenciaQuote {
+    position: static;
+  }
+
+  .pvGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .valoresGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .experienciaGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .heroTitle {
+    font-size: clamp(1.7rem, 7vw, 2.4rem);
+  }
+
+  .sectionTitle {
+    font-size: clamp(1.5rem, 6vw, 2rem);
+  }
+
+  .valoresGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .compromissoInner {
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  .compromissoQuote {
+    text-align: left;
+  }
+}

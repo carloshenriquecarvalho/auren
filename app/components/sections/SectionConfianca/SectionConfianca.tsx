@@ -15,7 +15,7 @@ const pilares = [
       </svg>
     ),
     title: "Padrões Técnicos",
-    body: "Cada equipamento do portfólio AUREN atende às exigências regulatórias da ANVISA e está alinhado às referências técnicas do setor de estética.",
+    body: "Cada tecnologia do portfólio AUREN atende às exigências regulatórias da ANVISA e está alinhada às referências técnicas do setor de estética.",
   },
   {
     id: "consultivo",
@@ -46,7 +46,7 @@ const pilares = [
       </svg>
     ),
     title: "Continuidade de Relacionamento",
-    body: "O encerramento da venda é apenas o início do contrato de parceria. O suporte técnico, o acompanhamento e a disponibilidade da equipe AUREN permanecem por toda a vida útil do equipamento.",
+    body: "O encerramento da venda é apenas o início do contrato de parceria. O suporte técnico, o acompanhamento e a disponibilidade da equipe AUREN permanecem por toda a vida útil da tecnologia.",
   },
 ];
 

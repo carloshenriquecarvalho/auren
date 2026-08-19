@@ -84,8 +84,8 @@ export default function SectionSobre() {
               animate={inView ? "visible" : "hidden"}
             >
               A AUREN é uma empresa especializada na comercialização consultiva
-              de equipamentos para estética profissional. Trabalhamos com
-              equipamentos originais da Medical San, comercializados diretamente
+              de tecnologias para estética profissional. Trabalhamos com
+              tecnologias originais da Medical San, comercializadas diretamente
               da fábrica — sem intermediários — e com total suporte ao cliente
               durante toda a jornada de aquisição e uso.
             </motion.p>
@@ -97,7 +97,7 @@ export default function SectionSobre() {
               animate={inView ? "visible" : "hidden"}
             >
               Não somos fabricantes. Somos especialistas no que selecionamos
-              e comercializamos. Conhecemos profundamente cada equipamento
+              e comercializamos. Conhecemos profundamente cada tecnologia
               do nosso portfólio e permanecemos presentes bem além da
               assinatura do contrato — porque nossa cultura é construída
               sobre relacionamento, não sobre volume.

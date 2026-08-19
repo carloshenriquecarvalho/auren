@@ -3,10 +3,10 @@ import Link from "next/link";
 import Image from "next/image";
 
 const footerLinks = [
-  { label: "A Empresa", href: "#quem-somos" },
+  { label: "Sobre a Empresa", href: "/sobre" },
   { label: "Valores", href: "#valores" },
-  { label: "Soluções", href: "#solucoes" },
-  { label: "Experiência", href: "#experiencia" },
+  { label: "Tecnologias", href: "#tecnologias-medical-san" },
+  { label: "Nossa História", href: "#nossa-historia" },
   { label: "Contato", href: "#contato" },
 ];
 
@@ -27,7 +27,7 @@ export default function Footer() {
               className={styles.logoImg}
             />
             <p className={styles.tagline}>
-              Compromisso, direção e propósito — em cada equipamento que entregamos.
+              Confiança, excelência e compromisso — em cada tecnologia que entregamos.
             </p>
           </div>
 
@@ -58,7 +58,7 @@ export default function Footer() {
 
         <div className={styles.bottom}>
           <p className={styles.copy}>
-            © {year} AUREN Equipamentos. Todos os direitos reservados.
+            © {year} AUREN. Todos os direitos reservados.
           </p>
           {/* <p className={styles.legal}>
             CNPJ: 00.000.000/0001-00 &nbsp;|&nbsp; Brasília, DF — Brasil
