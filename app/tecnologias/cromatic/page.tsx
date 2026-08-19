@@ -118,14 +118,6 @@ export default function CromaticPage() {
                     <span className={styles.produtoTag}>{p.tag}</span>
                     <h3 className={styles.produtoNome}>{p.nome}</h3>
                     <p className={styles.produtoDesc}>{p.descricaoCurta}</p>
-                    <ul className={styles.produtoSpecs}>
-                      {p.specs.map((s) => (
-                        <li key={s.label} className={styles.specItem}>
-                          <span className={styles.specLabel}>{s.label}</span>
-                          <span className={styles.specValor}>{s.valor}</span>
-                        </li>
-                      ))}
-                    </ul>
                     <Link
                       href={`/tecnologias/${p.slug}`}
                       className={styles.produtoCta}
