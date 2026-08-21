@@ -3,7 +3,8 @@
    ===================== */
 .breadcrumb {
   background: var(--white-pure);
-  padding-block: var(--space-4);
+  padding-top: calc(var(--navbar-h) + var(--space-4));
+  padding-bottom: var(--space-4);
   border-bottom: 1px solid var(--graphite-100);
 }
 

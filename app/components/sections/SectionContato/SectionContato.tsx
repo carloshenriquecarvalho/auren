@@ -85,13 +85,13 @@ export default function SectionContato() {
               </div>
               <div className={styles.infoItem}>
                 <span className={styles.infoLabel}>Telefone</span>
-                <a href="tel:+556100000000" className={styles.infoValue} id="contato-phone">
-                  +55 (61) 0000‑0000
+                <a href="tel:+556193322477" className={styles.infoValue} id="contato-phone">
+                  (61) 9332-2477
                 </a>
               </div>
               <div className={styles.infoItem}>
                 <span className={styles.infoLabel}>Localização</span>
-                <span className={styles.infoValue}>Brasília, DF — Brasil</span>
+                <span className={styles.infoValue}>QNA 30 Lote 06, Av. Comercial Norte<br />Taguatinga Norte — DF, CEP 72110-300</span>
               </div>
               <div className={styles.commitment}>
                 <div className={styles.commitmentAccent} aria-hidden="true" />

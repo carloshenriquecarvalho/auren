@@ -46,7 +46,7 @@ export default function Footer() {
           <div className={styles.contact}>
             <p className={styles.contactLabel}>Fale conosco</p>
             <a href="mailto:contato@auren.com.br" className={styles.contactLink} id="footer-email">
-              saraseixas1121@gmail.com
+              contato@auren.com.br
             </a>
             <a href="https://wa.me/556193322477" className={styles.contactLink} id="footer-phone">
               (61) 9332-2477

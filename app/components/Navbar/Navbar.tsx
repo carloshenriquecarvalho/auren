@@ -7,9 +7,9 @@ import styles from "./Navbar.module.css";
 
 const navLinks = [
   { label: "Sobre a Empresa", href: "/sobre" },
-  { label: "Nossa História", href: "#historia" },
-  { label: "Tecnologias", href: "#showcase" },
-  { label: "Nossas Marcas", href: "#marcas" },
+  { label: "Nossa História", href: "#nossa-historia" },
+  { label: "Tecnologias", href: "/#showcase" },
+  { label: "Nossas Marcas", href: "/#marcas" },
 ];
 
 export default function Navbar() {
@@ -36,12 +36,12 @@ export default function Navbar() {
         <nav className={styles.nav} aria-label="Navegação principal">
           <div className={styles.container}>
             {/* Logo */}
-            <Link href="#hero" className={styles.logo} onClick={closeMenu} aria-label="AUREN — início">
+            <Link href="/#hero" className={styles.logo} onClick={closeMenu} aria-label="AUREN — início">
               <Image
                 src="/logo-fundo-removido-sem-texto.png"
                 alt="AUREN Equipamentos Médicos"
-                width={200}
-                height={160}
+                width={300}
+                height={240}
                 className={styles.logoImg}
                 priority
               />

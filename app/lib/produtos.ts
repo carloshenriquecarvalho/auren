@@ -20,7 +20,7 @@ export const produtos: Produto[] = [
     marca: "Medical San",
     marcaSlug: "medical-san",
     tag: "Laser",
-    badge: "Depilação",
+    badge: "Epilação",
     imagem: "/products/hakon-photo.png",
     descricaoCurta:
       "O Hakon é o laser de depilação da Medical San com 4 comprimentos de onda — Rubi, Alexandrite, Diodo e Nd:YAG — para atuar em diferentes profundidades de folículos pilosos e todos os fototipos de pele.",
@@ -96,7 +96,7 @@ export const produtos: Produto[] = [
     marca: "Medical San",
     marcaSlug: "medical-san",
     tag: "Radiofrequência Microagulhada",
-    badge: "Radiofrequência",
+    badge: "Radiofrequência Robótica",
     imagem: "/products/ptolomeu-photo.png",
     descricaoCurta:
       "O Ptolomeu utiliza radiofrequência microagulhada para estimular colágeno em diferentes camadas da pele, com efeito lifting não invasivo e resultados naturais.",
