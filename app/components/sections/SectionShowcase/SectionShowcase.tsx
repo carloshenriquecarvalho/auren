@@ -19,8 +19,8 @@ export default function SectionShowcase() {
   const ref = useRef<HTMLElement>(null);
   const inView = useInView(ref, { once: true, margin: "-6%" });
 
-  const medicalSan = produtos.filter((p) => p.marcaSlug === "medical-san");
-  const cromatic = produtos.filter((p) => p.marcaSlug === "cromatic");
+  const medicalSan = produtos.filter((p) => p.marcaSlug === "medical-san").slice(0, 3);
+  const cromatic = produtos.filter((p) => p.marcaSlug === "cromatic").slice(0, 3);
 
   return (
     <section id="showcase" ref={ref} className={styles.section} aria-labelledby="showcase-title">
