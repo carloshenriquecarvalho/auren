@@ -12,8 +12,8 @@ const marcas = [
     nome: "Medical San",
     label: "Laser & Procedimentos Estéticos",
     descricao:
-      "Plataformas de laser com 4 comprimentos de onda, CO₂ fracionado padrão ouro e radiofrequência microagulhada. Tecnologias de alta performance para clínicas que buscam resultados visíveis e consistentes.",
-    tecnologias: ["Hakon — Laser 4 Comprimentos de Onda", "Hegon — CO₂ Fracionado", "Ptolomeu — RF Microagulhada"],
+      "Portfólio abrangente com tecnologias avançadas como CO₂ fracionado, radiofrequência microagulhada, ultrassom focalizado (HIFU), criolipólise, lasers para epilação, despigmentação e fototerapia. Plataformas de excelência para clínicas que buscam resultados visíveis.",
+    tecnologias: ["Velaryan — Laser de Diodo Terapêutico", "Hegon — CO₂ Fracionado", "Ptolomeu — RF Microagulhada"],
     cta: "Ver portfólio Medical San",
     accent: "linear-gradient(135deg, rgba(184,150,46,0.08) 0%, rgba(184,150,46,0.03) 100%)",
   },
@@ -23,8 +23,8 @@ const marcas = [
     nome: "Cromatic",
     label: "Laser & Plataformas Multitecnologia",
     descricao:
-      "Laser para remoção de pigmentos com 3 comprimentos de onda, CO₂ fracionado de alta versatilidade e plataforma HIFU + RF + EMS para face e corpo. Inovação e rentabilidade para clínicas de alto padrão.",
-    tecnologias: ["Neo One — Laser 3 Comprimentos de Onda", "Fusion — CO₂ Fracionado", "Trinity Go — HIFU + RF + EMS"],
+      "Soluções avançadas em Laser de Fibra Ótica para Endolift®, plataformas 4 em 1 (HIFU, MPT, RF e EMS), Thulium Laser e sistemas integrados de Nd:YAG com Diode Laser. Inovação contínua e rentabilidade para clínicas de alto padrão.",
+    tecnologias: ["Infinity Duos — Diode Laser + Nd:YAG", "Elyon — Endolift® a Laser", "Trinity Pro — Plataforma 4 em 1"],
     cta: "Ver portfólio Cromatic",
     accent: "linear-gradient(135deg, rgba(92,90,85,0.06) 0%, rgba(92,90,85,0.02) 100%)",
   },

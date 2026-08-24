@@ -19,8 +19,16 @@ export default function SectionShowcase() {
   const ref = useRef<HTMLElement>(null);
   const inView = useInView(ref, { once: true, margin: "-6%" });
 
-  const medicalSan = produtos.filter((p) => p.marcaSlug === "medical-san").slice(0, 3);
-  const cromatic = produtos.filter((p) => p.marcaSlug === "cromatic").slice(0, 3);
+  const medicalSanSlugs = ["velaryan", "hegon", "ptolomeu"];
+  const cromaticSlugs = ["infinity-duos", "elyon", "trinity-pro"];
+
+  const medicalSan = medicalSanSlugs
+    .map((slug) => produtos.find((p) => p.slug === slug))
+    .filter((p): p is (typeof produtos)[0] => p !== undefined);
+
+  const cromatic = cromaticSlugs
+    .map((slug) => produtos.find((p) => p.slug === slug))
+    .filter((p): p is (typeof produtos)[0] => p !== undefined);
 
   return (
     <section id="showcase" ref={ref} className={styles.section} aria-labelledby="showcase-title">
