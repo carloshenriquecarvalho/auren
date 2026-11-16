@@ -48,8 +48,8 @@ const beneficios = [
         <polygon points="20,5 24,14 34,15 27,22 29,32 20,27 11,32 13,22 6,15 16,14" stroke="currentColor" strokeWidth="1.2" fill="none" />
       </svg>
     ),
-    title: "Marcas de referência mundial",
-    body: "Representamos Medical San e Cromatic — fabricantes com histórico de excelência e tecnologia validada em mercados exigentes. Credibilidade que você oferece à sua clientela.",
+    title: "Marca de referência e excelência",
+    body: "Representamos com exclusividade a Medical San — fabricante líder com histórico de inovação e tecnologia validada em clínicas de alta exigência. Credibilidade que você oferece à sua clientela.",
   },
 ];
 

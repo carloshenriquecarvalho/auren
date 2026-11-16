@@ -9,7 +9,7 @@ const navLinks = [
   { label: "Sobre a Empresa", href: "/sobre" },
   { label: "Nossa História", href: "#nossa-historia" },
   { label: "Tecnologias", href: "/#showcase" },
-  { label: "Nossas Marcas", href: "/#marcas" },
+  { label: "Medical San", href: "/#marcas" },
 ];
 
 export default function Navbar() {

@@ -4,10 +4,10 @@ import Image from "next/image";
 
 const footerLinks = [
   { label: "Sobre a Empresa", href: "/sobre" },
-  { label: "Valores", href: "#valores" },
-  { label: "Tecnologias", href: "#tecnologias-medical-san" },
-  { label: "Nossa História", href: "#nossa-historia" },
-  { label: "Contato", href: "#contato" },
+  { label: "Nossa História", href: "/#nossa-historia" },
+  { label: "Tecnologias", href: "/#showcase" },
+  { label: "Medical San", href: "/tecnologias/medical-san" },
+  { label: "Contato", href: "/#contato" },
 ];
 
 export default function Footer() {

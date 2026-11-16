@@ -7,26 +7,26 @@ import styles from "./SectionMarcas.module.css";
 
 const marcas = [
   {
-    id: "medical-san",
+    id: "medical-san-medica",
     slug: "medical-san",
-    nome: "Medical San",
-    label: "Laser & Procedimentos Estéticos",
+    nome: "Linha Médica & Alta Performance",
+    label: "Laser & Procedimentos Médicos",
     descricao:
-      "Portfólio abrangente com tecnologias avançadas como CO₂ fracionado, radiofrequência microagulhada, ultrassom focalizado (HIFU), criolipólise, lasers para epilação, despigmentação e fototerapia. Plataformas de excelência para clínicas que buscam resultados visíveis.",
-    tecnologias: ["Velaryan — Laser de Diodo Terapêutico", "Hegon — CO₂ Fracionado", "Ptolomeu — RF Microagulhada"],
-    cta: "Ver portfólio Medical San",
+      "Plataformas consagradas em precisão cirúrgica, ginecologia e regeneração tecidual profunda. Equipamentos padrão ouro para procedimentos médicos e dermatológicos de alto impacto.",
+    tecnologias: ["Hegon — Laser CO₂ Fracionado 10.600nm", "Ptolomeu — RF Robótica Microagulhada", "Velaryan — Laser Diodo Terapêutico Multi-Aplicador"],
+    cta: "Conhecer linha médica",
     accent: "linear-gradient(135deg, rgba(184,150,46,0.08) 0%, rgba(184,150,46,0.03) 100%)",
   },
   {
-    id: "cromatic",
-    slug: "cromatic",
-    nome: "Cromatic",
-    label: "Laser & Plataformas Multitecnologia",
+    id: "medical-san-estetica",
+    slug: "medical-san",
+    nome: "Linha Estética & Corporal Avançada",
+    label: "Epilação, Remodelamento & Harmonização",
     descricao:
-      "Soluções avançadas em Laser de Fibra Ótica para Endolift®, plataformas 4 em 1 (HIFU, MPT, RF e EMS), Thulium Laser e sistemas integrados de Nd:YAG com Diode Laser. Inovação contínua e rentabilidade para clínicas de alto padrão.",
-    tecnologias: ["Infinity Duos — Diode Laser + Nd:YAG", "Elyon — Endolift® a Laser", "Trinity Pro — Plataforma 4 em 1"],
-    cta: "Ver portfólio Cromatic",
-    accent: "linear-gradient(135deg, rgba(92,90,85,0.06) 0%, rgba(92,90,85,0.02) 100%)",
+      "Soluções completas para clínicas estéticas que buscam máxima rentabilidade, versatilidade e segurança clínica em todos os fototipos de pele.",
+    tecnologias: ["Hakon — Laser de Epilação 4D (4 Comprimentos de Onda)", "Criodermis 2.0 — Criolipólise de Placas de Grande Área", "Ultramed — Plataformas HIFU e MPT de Alta Precisão"],
+    cta: "Conhecer linha estética",
+    accent: "linear-gradient(135deg, rgba(184,150,46,0.05) 0%, rgba(184,150,46,0.02) 100%)",
   },
 ];
 
@@ -54,15 +54,16 @@ export default function SectionMarcas() {
         >
           <div className={styles.labelRow}>
             <span className={styles.divider} aria-hidden="true" />
-            <span className="section-label">Nossas Marcas</span>
+            <span className="section-label">Marca Exclusiva</span>
           </div>
           <h2 id="marcas-title" className={styles.title}>
-            Duas marcas.<br />
-            <em>Um padrão de excelência.</em>
+            Medical San.<br />
+            <em>Padrão absoluto de excelência.</em>
           </h2>
           <p className={styles.subtitle}>
-            Representamos com exclusividade Medical San e Cromatic — cada uma com
-            um portfólio dedicado, documentação ANVISA e suporte consultivo da AUREN.
+            A AUREN é parceira comercial exclusiva da Medical San — fabricante líder
+            que une inovação científica, rigor produtivo e documentação ANVISA em
+            todas as suas plataformas.
           </p>
         </motion.div>
 

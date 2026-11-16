@@ -10,7 +10,7 @@ import styles from "../marca.module.css";
 export const metadata: Metadata = {
   title: "Tecnologias Medical San — Portfólio AUREN",
   description:
-    "Conheça o portfólio completo de tecnologias Medical San comercializadas pela AUREN: Hakon (laser 4 comprimentos de onda), Hegon (CO₂ fracionado) e Ptolomeu (RF Microagulhada). Suporte consultivo dedicado.",
+    "Conheça o portfólio completo de tecnologias Medical San comercializadas com exclusividade pela AUREN: Hakon, Hegon, Ptolomeu, Velaryan e muito mais. Suporte consultivo dedicado.",
 };
 
 export default function MedicalSanPage() {
@@ -97,7 +97,7 @@ export default function MedicalSanPage() {
                 <span className="section-label">Portfólio</span>
               </div>
               <h2 id="ms-produtos-title" className={styles.produtosTitle}>
-                Três tecnologias,<br /><em>um padrão de excelência.</em>
+                Tecnologias de alta performance,<br /><em>um padrão de excelência.</em>
               </h2>
             </div>
 

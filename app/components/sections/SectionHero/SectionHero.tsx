@@ -102,8 +102,8 @@ export default function SectionHero() {
             className={styles.heroLogo}
             priority
           />
-          {/* Logos circulares dos parceiros */}
-          <div className={styles.partnerRow} aria-label="Parceiros AUREN">
+          {/* Logo circular do parceiro exclusivo */}
+          <div className={styles.partnerRow} aria-label="Parceiro Exclusivo AUREN">
             <div className={styles.partnerItem} id="hero-parceiro-medical-san">
               <div className={styles.partnerCircle}>
                 <Image
@@ -115,19 +115,6 @@ export default function SectionHero() {
                 />
               </div>
               <span className={styles.partnerLabel}>Medical San</span>
-            </div>
-            <div className={styles.partnerDivider} aria-hidden="true" />
-            <div className={styles.partnerItem} id="hero-parceiro-cromatic">
-              <div className={styles.partnerCircle}>
-                <Image
-                  src="/logo-cromatic-1.png"
-                  alt="Cromatic"
-                  width={48}
-                  height={48}
-                  className={styles.partnerImg}
-                />
-              </div>
-              <span className={styles.partnerLabel}>Cromatic</span>
             </div>
           </div>
         </motion.div>
