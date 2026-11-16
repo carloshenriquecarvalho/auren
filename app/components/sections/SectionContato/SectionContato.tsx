@@ -90,6 +90,24 @@ export default function SectionContato() {
                 </a>
               </div>
               <div className={styles.infoItem}>
+                <span className={styles.infoLabel}>Instagram</span>
+                <a
+                  href="https://www.instagram.com/aurenmed/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.infoValue}
+                  id="contato-instagram"
+                  style={{ display: "inline-flex", alignItems: "center", gap: "6px" }}
+                >
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                  </svg>
+                  @aurenmed
+                </a>
+              </div>
+              <div className={styles.infoItem}>
                 <span className={styles.infoLabel}>Localização</span>
                 <span className={styles.infoValue}>QNA 30 Lote 06, Av. Comercial Norte<br />Taguatinga Norte — DF, CEP 72110-300</span>
               </div>

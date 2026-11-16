@@ -58,10 +58,29 @@ export default function Navbar() {
               ))}
             </ul>
 
-            {/* CTA */}
-            <Link href="#contato" className={styles.cta} id="navbar-cta">
-              Contato
-            </Link>
+            {/* Actions: Instagram + CTA */}
+            <div className={styles.navActions}>
+              <a
+                href="https://www.instagram.com/aurenmed/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.instagramLink}
+                aria-label="Instagram da AUREN (@aurenmed)"
+                title="Siga @aurenmed no Instagram"
+                id="navbar-instagram"
+              >
+                <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </a>
+
+              {/* CTA */}
+              <Link href="#contato" className={styles.cta} id="navbar-cta">
+                Contato
+              </Link>
+            </div>
 
             {/* Hamburger */}
             <button
@@ -98,6 +117,23 @@ export default function Navbar() {
             <Link href="#contato" className={styles.drawerCta} onClick={closeMenu} id="drawer-cta">
               Iniciar uma conversa
             </Link>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/aurenmed/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.drawerSocial}
+              onClick={closeMenu}
+              id="drawer-instagram"
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+              Instagram @aurenmed
+            </a>
           </li>
         </ul>
       </div>
